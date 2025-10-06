@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url(./img/fundo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* --- Cabeçalho --- */
+header {
+  background: #528537;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  border-radius: 0 0 20px 20px;
+  flex-wrap: wrap;
+}
+
+header img {
+  height: 100px;
+}
+
+.barra-pesquisa {
+  display: flex;
+  gap: 5px;
+}
+
+.barra-pesquisa input {
+  padding: 6px 70px;
+  border-radius: 10px;
+  border: none;
+}
+
+.barra-pesquisa button {
+  padding: 6px 15px;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  color: #028a0f;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.barra-pesquisa button:hover {
+  background: #ddd;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.icone-usuario {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.icone-usuario a {
+  color: white;
+  text-decoration: none;
+}
+
+.informacoes {
+  background: rgba(93, 168, 22, 0.8);
+  padding: 50px;
+  margin: 10px auto;
+  border-radius: 10px;
+  max-width: 600px;
+  text-align: left;
+  background-color: #6fa34e;
+  border: 8px solid#4d7c2b;
+  color: white;
+  text-transform: uppercase;
+  font-size: large;
+}
+
+.informacoes img {
+  width: 200px;
+}
+
+
+.historico {
+  background: rgba(93, 168, 22, 0.8);
+  padding: 50px;
+  margin: 10px auto;
+  border-radius: 10px;
+  max-width: 600px;
+  text-align: left;
+  background-color: #6fa34e;
+  border: 8px solid #4d7c2b;
+  color: white;
+  font-size: larger;
+}
+
+.localizacao {
+  background: rgba(93, 168, 22, 0.8);
+  padding: 50px;
+  margin: 10px auto;
+  border-radius: 10px;
+  max-width: 600px;
+  text-align: left;
+  background-color: #6fa34e;
+  color: white;
+  border: 8px solid #4d7c2b;
+}
+
+.perfil-info-container {
+  display: flex;
+  /* Transforma o contêiner em um Flexbox */
+  flex-wrap: wrap;
+  /* Permite que os itens quebrem a linha em telas menores */
+  justify-content: space-between;
+  /* Distribui o espaço entre os itens */
+  gap: 20px;
+  /* Adiciona um espaço de 20px entre os itens */
+  margin-top: 20px;
+  /* Adiciona uma margem superior para espaçamento */
+}
+
+.informacoes,
+.historico-container {
+  flex: auto;
+  /* Permite que os itens cresçam para preencher o espaço disponível */
+  padding: 20px;
+  border: auto, solid;
+  border-radius: 8px;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.icone-usuario {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.icone-usuario a {
+  color: white;
+  text-decoration: none;
+}
+
+/* --- Imóveis --- */
+.imovel {
+  background: #6fa34e;
+  border: 8px solid #4d7c2b;
+  border-radius: 10px;
+  margin: 24px;
+  padding: 8px 12px 12px 12px;
+  width: 98%;
+  max-width: 99vw;
+  position: relative;
+}
+
+/* Título do catálogo */
+.catalogo h2 {
+  margin-bottom: 20px;
+}
+
+/* Container para os cards */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Card individual do catálogo tradicional */
+.cards .card {
+  background: #028a0f;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Imagem dentro dos cards */
+.cards .card img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* Título do card */
+.cards .card h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Texto do card */
+.cards .card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Bloco com imóveis e grade de imagens */
+.imovel {
+  background: #6fa34e;
+  border: 8px solid #4d7c2b;
+  border-radius: 10px;
+  margin: 24px;
+  padding: 8px 12px 12px 12px;
+  width: 98%;
+  max-width: 99vw;
+  position: relative;
+}
+
+/* Título da seção de imóveis */
+.imovel .titulo {
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* Layout em grade com 4 colunas e 2 linhas */
+.grade {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 120px 70px;
+  gap: 12px;
+}
+
+/* Card de imagem ou descrição */
+.casa {
+  width: auto;
+  height: 125px;
+}
+
+.especificacao {
+  background: #fff;
+  border: none;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+/* Imagem dentro da casa */
+.casa img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 20px;
+}
+
+/* Rodapé com fundo verde e texto centralizado */
+footer {
+  background: #528537;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 20px 20px 0 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.casa a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.casa:hover img {
+  transform: scale(1.05);
+}
+
+#aba-notificacao {
+  display: none;
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  width: 300px;
+  padding: 20px;
+  background-color: bisque;
+  border: 5px solid rgb(0, 105, 0);
+  box-shadow: 0 5px 5px black;
+  z-index: 9999;
+}
+
+.fechar {
+  cursor: pointer;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 40px;
+}
+
+.fechar:hover {
+  color: red;
+}
+
+
+
+
+
+.nome-usuario {
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 4px 8px;
+  font-weight: bold;
+  color: #333;
+  display: inline-block;
+}
+
+.status-interessado {
+  background-color: #d1e7dd;
+  border: 1px solid #86b7a0;
+  border-radius: 5px;
+  padding: 4px 8px;
+  font-weight: bold;
+  color: #0f5132;
+  display: inline-block;
+}
+
+.notificacao-conteudo {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.notificacao-cabecalho {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.notificacao-conteudo .mensagem {
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 4px 8px;
+  font-weight: bold;
+  color: #333;
+  display: inline-block;
+}

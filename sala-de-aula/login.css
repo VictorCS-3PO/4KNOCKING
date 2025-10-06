@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+.esquerda {
+    flex: 1;
+    background: #5C7543 url('./img/foto-login.png') no-repeat center;
+    background-size: cover;
+    color: white;
+    padding: 40px;
+}
+
+.esquerda h1 {
+    margin-top: 100px;
+    font-size: 28px;
+}
+
+.direita {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+
+.caixa-login,
+.caixa-cadastro {
+    width: 320px;
+    box-shadow: 0 0 15px #627c4d;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.caixa-login h2,
+.caixa-cadastro h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.caixa-login form,
+.caixa-cadastro form {
+    display: flex;
+    flex-direction: column;
+}
+
+.caixa-login input,
+.caixa-cadastro input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.caixa-login button,
+.caixa-cadastro button {
+    padding: 10px;
+    background-color: #5C7543;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.caixa-login p,
+.caixa-cadastro p {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.caixa-login a,
+.caixa-cadastro a {
+    color: #5C7543;
+    text-decoration: none;
+}
+
+.botao {
+    display: block;
+    text-align: center;
+    background-color: #5C7543;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #4a6135;
+}

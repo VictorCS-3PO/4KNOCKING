@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informação do imóvel</title>
+  <link rel="stylesheet" href="tela.css">
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <a href="./login.html">
+      <img src="img/1logo.png" alt="Logo 4Knocking" />
+    </a>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Digite sua pesquisa..." />
+      <button>Buscar</button>
+    </div>
+
+    <nav class="menu">
+      <a href="./home.html">Home</a>
+      <a href="./vendas.html">Vendas</a>
+      <a href="./alugueis.html">Aluguéis</a>
+      <a href="#" id="link-notificacao">Notificação</a>
+    </nav>
+
+    <div class="icone-usuario">
+      <a href="./perfil.html"><ion-icon name="person-circle-outline"></ion-icon></a>
+    </div>
+
+    <div id="aba-notificacao" style="display:none;">
+      <span class="fechar" onclick="fecharAba()">&times;</span>
+      <h3>Nova Notificação</h3>
+
+      <div class="notificacao-conteudo">
+        <span class="nome-usuario">👤 Usuário Tal</span>
+        <span class="status-interessado"><a href="#">Interessado</a></span>
+        <p class="mensagem">"mensagem longa de texto só para testar a expansão automática da caixa de notificação"</p>
+      </div>
+
+      <div class="notificacao-conteudo">
+        <span class="nome-usuario">👤 Usuário Tal</span>
+        <span class="status-interessado"><a href="#">Interessado</a></span>
+        <p class="mensagem">"mensagem tal"</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main class="container">
+    <div class="main-content">
+      <!-- Galeria de imagens -->
+      <div class="image-gallery">
+        <div class="main-image">
+          <img src="img/casa.jpg" alt="Imagem principal do imóvel" style="width:100%; height:auto;">
+          <img src="img/casa.jpg" alt="Imagem principal do imóvel" style="width: 25%; height:auto;">
+          <img src="img/casa.jpg" alt="Imagem principal do imóvel" style="width: 25%; height:auto;">
+          <img src="img/casa.jpg" alt="Imagem principal do imóvel" style="width: 25%; height:auto;">
+        </div>
+      </div>
+
+      <!-- Sidebar com informações do imóvel -->
+      <aside class="sidebar">
+        <div class="price-section">
+          <h1>R$ 950,00</h1>
+          <span class="status-badge">Aluguel</span>
+        </div>
+
+        <div class="details-section">
+          <p>Condomínio: R$</p>
+          <p>IPTU: R$</p>
+        </div>
+
+        <div class="contact-section">
+          <div class="agent-info">
+            <div class="agent-photo"></div>
+            <p>Imobiliária X</p>
+          </div>
+          <p>+55 (11) 12345-6789</p>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Descrição do imóvel -->
+    <section class="property-description-section">
+      <div class="description-header">
+        <h2>Imóvel X</h2>
+        <p>Código do anúncio: 123456J</p>
+      </div>
+      <p>Descrição do imóvel.</p>
+      <hr>
+    </section>
+  </main>
+
+  <!-- Scripts -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
